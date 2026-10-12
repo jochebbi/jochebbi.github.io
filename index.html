@@ -1,12 +1,121 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Youssef Chebbi — Mathematics, finance and analytical research portfolio.">
   <title>Youssef Chebbi | Portfolio</title>
+  <style>
+    :root { --ink:#17243a; --muted:#657184; --line:#e4e8ee; --accent:#244b78; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; background:#fff; color:var(--ink); font-family:Arial,Helvetica,sans-serif; line-height:1.65; }
+    .container { width:min(1060px,calc(100% - 48px)); margin:auto; }
+    header { border-bottom:1px solid var(--line); }
+    nav { display:flex; justify-content:space-between; align-items:center; padding:23px 0; gap:20px; }
+    .brand { font-size:15px; font-weight:700; letter-spacing:.09em; }
+    .navlinks { display:flex; gap:26px; }
+    a { color:inherit; text-decoration:none; }
+    a:hover { color:var(--accent); }
+    .navlinks a { color:var(--muted); font-size:13px; }
+    .hero { padding:100px 0 88px; border-bottom:1px solid var(--line); }
+    .eyebrow { color:var(--accent); font-size:12px; font-weight:700; letter-spacing:.16em; text-transform:uppercase; }
+    h1 { font-size:clamp(42px,7vw,74px); line-height:1.1; letter-spacing:-.045em; margin:20px 0; }
+    .subtitle { font-size:20px; color:var(--muted); margin:0 0 24px; }
+    .intro { max-width:690px; font-size:16px; color:#465366; }
+    .actions { display:flex; gap:14px; flex-wrap:wrap; margin-top:30px; }
+    .button { display:inline-block; padding:11px 19px; border:1px solid var(--ink); font-size:13px; font-weight:600; }
+    .button.primary { background:var(--ink); color:white; }
+    .button:hover { opacity:.78; }
+    section { padding:74px 0; }
+    .section-heading { font-size:28px; letter-spacing:-.03em; margin:0 0 12px; }
+    .section-intro { color:var(--muted); max-width:720px; margin:0 0 32px; }
+    .grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px; }
+    .project { border:1px solid var(--line); padding:30px; display:flex; flex-direction:column; align-items:flex-start; }
+    .number { font-size:12px; color:var(--accent); font-weight:700; letter-spacing:.12em; }
+    .project h3 { font-size:21px; letter-spacing:-.02em; margin:16px 0 8px; }
+    .project p { font-size:14px; color:var(--muted); margin:0 0 24px; flex:1; }
+    .project a { font-size:13px; color:var(--accent); font-weight:700; }
+    .about { border-top:1px solid var(--line); }
+    .about p { max-width:770px; color:#465366; }
+    footer { border-top:1px solid var(--line); padding:25px 0; color:var(--muted); font-size:12px; }
+    @media(max-width:650px) {
+      .grid { grid-template-columns:1fr; }
+      .navlinks { gap:14px; }
+      .hero { padding:70px 0; }
+      section { padding:54px 0; }
+      .container { width:calc(100% - 36px); }
+    }
+  </style>
 </head>
 <body>
-  <h1>Youssef Chebbi</h1>
-  <p>Mathematics, Finance & Trading</p>
+  <header>
+    <nav class="container">
+      <a class="brand" href="#">YOUSSEF CHEBBI</a>
+      <div class="navlinks">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="https://github.com/jochebbi" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container hero">
+      <div class="eyebrow">Mathematics · Finance · Research</div>
+      <h1>Youssef Chebbi</h1>
+      <p class="subtitle">Quantitative Finance & Financial Markets</p>
+      <p class="intro">A portfolio of independent analytical projects spanning quantitative trading, equity research, company analysis and operational risk. Bringing mathematical reasoning and structured research to financial and business decisions.</p>
+      <div class="actions">
+        <a class="button primary" href="#projects">Explore Projects</a>
+        <a class="button" href="https://github.com/jochebbi" target="_blank" rel="noopener noreferrer">View GitHub</a>
+      </div>
+    </div>
+
+    <section id="projects" class="container">
+      <h2 class="section-heading">Selected Projects</h2>
+      <p class="section-intro">Research reports, Python analysis and independent investigations. Select a project to access its documentation and underlying materials.</p>
+      <div class="grid">
+        <article class="project">
+          <span class="number">01 / QUANTITATIVE FINANCE</span>
+          <h3>Algorithmic Trading Portfolio</h3>
+          <p>An evolving Python-based virtual trading project exploring market data, returns, volatility, investment hypotheses and systematic decision-making. Work in progress.</p>
+          <a href="https://github.com/jochebbi/algorithmic-trading-portfolio" target="_blank" rel="noopener noreferrer">Explore project →</a>
+        </article>
+        <article class="project">
+          <span class="number">02 / EQUITY RESEARCH</span>
+          <h3>Reckitt Benckiser</h3>
+          <p>Corporate and equity research examining company performance, financial fundamentals, ESG considerations, credit and geopolitical risk.</p>
+          <a href="https://github.com/jochebbi/equity-research" target="_blank" rel="noopener noreferrer">Explore project →</a>
+        </article>
+        <article class="project">
+          <span class="number">03 / COMPANY ANALYSIS</span>
+          <h3>NextEra Energy Primer</h3>
+          <p>A structured company primer introducing the business, its operating environment and relevant considerations for investment research.</p>
+          <a href="https://github.com/jochebbi/company-primer" target="_blank" rel="noopener noreferrer">Explore project →</a>
+        </article>
+        <article class="project">
+          <span class="number">04 / OPERATIONAL RISK</span>
+          <h3>GE Vernova Quality Analysis</h3>
+          <p>A mathematics graduate's perspective on manufacturing quality, non-conformances, measurement, process controls and operational risk.</p>
+          <a href="https://github.com/jochebbi/manufacturing-quality-analysis" target="_blank" rel="noopener noreferrer">Explore project →</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-heading">About</h2>
+        <p>My academic background is in Mathematics with Finance and Management at King's College London. My interests centre on financial markets, quantitative analysis and trading, with an emphasis on applying mathematical reasoning to practical decisions.</p>
+        <p>This website brings together selected research, technical work and industry analysis. Projects are documented with their underlying assumptions, methods and limitations.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">© 2026 Youssef Chebbi · <a href="https://github.com/jochebbi">GitHub</a></div>
+  </footer>
 </body>
 </html>
+  
